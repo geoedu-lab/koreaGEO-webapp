@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국지리 탐구 수행평가 | 자연재해 공간 분포 및 대안 설계</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            .slide-content { display: block !important; margin-bottom: 2rem; page-break-after: always; }
+            body { background-color: white !important; font-size: 11pt; }
+            .shadow-lg, .shadow-md, .shadow-sm { box-shadow: none !important; }
+            .border-slate-200, .border-slate-300 { border-color: #cbd5e1 !important; }
+            textarea, input, select { border: 1px solid #cbd5e1 !important; background: transparent !important; }
+        }
+    </style>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;background:#f1f5f9;color:#1e293b;min-height:100vh;padding:12px}
+.max-w-4xl{max-width:56rem;margin-left:auto;margin-right:auto}
+.mx-auto{margin-left:auto;margin-right:auto}
+.space-y-5>*+*{margin-top:1.25rem}.space-y-4>*+*{margin-top:1rem}.space-y-3>*+*{margin-top:.75rem}.space-y-2>*+*{margin-top:.5rem}.space-y-1>*+*{margin-top:.25rem}
+.bg-white{background:#fff}.bg-slate-100{background:#f1f5f9}.bg-slate-50{background:#f8fafc}.bg-indigo-50{background:#eef2ff}.bg-indigo-600{background:#4f46e5}.bg-indigo-700{background:#4338ca}.bg-emerald-600{background:#059669}.bg-rose-100{background:#ffe4e6}.bg-rose-200{background:#fecdd3}.bg-amber-50{background:#fffbeb}.bg-amber-100{background:#fef3c7}.bg-amber-600{background:#d97706}.bg-slate-200{background:#e2e8f0}
+.text-slate-800{color:#1e293b}.text-slate-900{color:#0f172a}.text-slate-700{color:#334155}.text-slate-600{color:#475569}.text-slate-500{color:#64748b}.text-slate-400{color:#94a3b8}.text-indigo-700{color:#4338ca}.text-indigo-900{color:#312e81}.text-white{color:#fff}.text-emerald-600{color:#059669}.text-rose-500{color:#f43f5e}.text-rose-700{color:#be123c}.text-amber-700{color:#b45309}
+.font-sans{font-family:inherit}.font-bold{font-weight:700}.font-semibold{font-weight:600}.font-extrabold{font-weight:800}.font-black{font-weight:900}
+.text-xs{font-size:.75rem}.text-sm{font-size:.875rem}.text-base{font-size:1rem}.text-lg{font-size:1.125rem}.text-xl{font-size:1.25rem}.text-2xl{font-size:1.5rem}
+.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}
+.w-full{width:100%}.w-64{width:16rem}.h-full{height:100%}.max-h-96{max-height:24rem}.min-h-screen{min-height:100vh}
+.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-2xl{border-radius:1rem}.border{border:1px solid #e2e8f0}.border-2{border:2px solid #cbd5e1}.border-b{border-bottom:1px solid #e2e8f0}.border-b-2{border-bottom:2px solid #4f46e5}.border-t{border-top:1px solid #e2e8f0}.border-slate-100{border-color:#f1f5f9}.border-slate-200{border-color:#e2e8f0}.border-slate-300{border-color:#cbd5e1}.border-indigo-100{border-color:#e0e7ff}.border-indigo-600{border-color:#4f46e5}.border-amber-200{border-color:#fde68a}
+.shadow-sm{box-shadow:0 1px 3px rgba(15,23,42,.08)}.shadow-lg{box-shadow:0 10px 25px rgba(15,23,42,.08)}
+.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.items-center{align-items:center}.items-start{align-items:flex-start}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.flex-wrap{flex-wrap:wrap}.flex-col{flex-direction:column}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.space-x-1>*+*{margin-left:.25rem}.space-x-2>*+*{margin-left:.5rem}.space-x-3>*+*{margin-left:.75rem}.overflow-x-auto{overflow-x:auto}.cursor-pointer{cursor:pointer}.relative{position:relative}.absolute{position:absolute}.inset-0{inset:0}.hidden{display:none!important}.block{display:block}.object-contain{object-fit:contain}
+input,textarea,select,button{font:inherit}input,textarea,select{border:1px solid #cbd5e1;border-radius:.75rem;padding:.65rem;outline:none}textarea{resize:vertical}button{border:0;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}
+button.bg-indigo-600:hover{background:#4338ca}button.bg-emerald-600:hover{background:#047857}
+.focus\\:ring-2:focus{box-shadow:0 0 0 3px rgba(99,102,241,.2)}
+.text-center{text-align:center}.mt-2{margin-top:.5rem}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.pb-1{padding-bottom:.25rem}.pb-3{padding-bottom:.75rem}.pt-2{padding-top:.5rem}.pt-4{padding-top:1rem}
+.grid-cols-1{grid-template-columns:1fr}.sm\\:grid-cols-2{grid-template-columns:repeat(2,1fr)}.md\\:grid-cols-2{grid-template-columns:repeat(2,1fr)}
+.sm\\:text-lg{font-size:1.125rem}.sm\\:text-2xl{font-size:1.5rem}.sm\\:text-sm{font-size:.875rem}.sm\\:w-64{width:16rem}
+@media(max-width:640px){body{padding:8px}.p-6{padding:1rem}.sm\\:grid-cols-2{grid-template-columns:1fr}.sm\\:w-64{width:100%}.sm\\:text-2xl{font-size:1.25rem}}
+@media print{.no-print{display:none!important}.slide-content{display:block!important;margin-bottom:2rem;page-break-after:always}body{background:#fff!important;font-size:11pt}.shadow-lg,.shadow-md,.shadow-sm{box-shadow:none!important}.border-slate-200,.border-slate-300{border-color:#cbd5e1!important}textarea,input,select{border:1px solid #cbd5e1!important;background:transparent!important}}
+</style>
+
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen p-3 sm:p-6">
+
+    <div class="max-w-4xl mx-auto space-y-5">
+
+        <!-- 상단 액션 바: 파일 저장, 불러오기 및 슬라이드 탭 -->
+        <div class="no-print bg-white p-4 rounded-2xl shadow-sm border border-slate-200 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
+                <div class="flex items-center space-x-2 text-indigo-700 font-bold">
+                    📋
+                    <span class="text-base sm:text-lg">2026 서귀포고 2학년 한국지리 탐구 2차 수행평가</span>
+                </div>
+                
+                <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="exportData()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-semibold px-3 py-2 rounded-xl transition flex items-center space-x-1 shadow-sm">
+                        ⬇️
+                        <span>작성 내용 저장 (.json)</span>
+                    </button>
+                    <label class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-3 py-2 rounded-xl transition cursor-pointer flex items-center space-x-1 shadow-sm">
+                        ⬆️
+                        <span>불러오기 (.json)</span>
+                        <input type="file" id="importFileInput" accept=".json" class="hidden" onchange="importData(event)">
+                    </label>
+                </div>
+            </div>
+
+            <!-- 슬라이드 내비게이션 탭 -->
+            <div class="flex items-center justify-between gap-2 overflow-x-auto pb-1">
+                <div class="flex items-center space-x-2">
+                    <button onclick="switchTab(1)" id="tab-1" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-indigo-600 text-white">
+                        1차시: GIS 지도 업로드
+                    </button>
+                    <button onclick="switchTab(2)" id="tab-2" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 text-slate-600 hover:bg-slate-200">
+                        2차시: 특성 및 사례 분석
+                    </button>
+                    <button onclick="switchTab(3)" id="tab-3" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 text-slate-600 hover:bg-slate-200">
+                        3차시: 진로 연계 대안 설계
+                    </button>
+                </div>
+                <button onclick="switchTab(0)" id="tab-0" class="tab-btn px-3 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-amber-700 hover:bg-amber-100 border border-amber-200">
+                    👁️전체 보기
+                </button>
+            </div>
+        </div>
+
+        <!-- 헤더 / 학생 인적사항 -->
+        <div class="no-print bg-emerald-50 border border-emerald-200 text-emerald-900 p-3 rounded-xl text-xs sm:text-sm">
+<strong>학생 안내:</strong> 이 웹앱은 브라우저에서 바로 사용할 수 있습니다. 작성 후 <b>「작성 내용 저장 (.json)」</b>을 눌러 파일을 다운로드하고, 해당 파일을 과제 제출물로 제출하세요.
+</div>
+<header class="bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200">
+            <div class="border-b-2 border-indigo-600 pb-3 mb-4">
+                <h1 class="text-xl sm:text-2xl font-black text-slate-900 mt-2">자연재해 공간적 분포 및 대안 설계하기</h1>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 mb-1">학번</label>
+                    <input type="text" id="info-number" placeholder="예: 20101 (2학년 1반 1번)" class="save-field w-full p-2 bg-slate-50 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 mb-1">이름</label>
+                    <input type="text" id="info-name" placeholder="예: 홍길동" class="save-field w-full p-2 bg-slate-50 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+            </div>
+        </header>
+
+        <!-- 1차시 슬라이드 -->
+        <section id="slide-1" class="slide-content bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-5">
+            <div class="flex items-center space-x-3 border-b pb-3 border-slate-100">
+                <span class="bg-indigo-600 text-white font-bold px-3 py-1 rounded-lg text-sm">1차시</span>
+                <h2 class="text-lg font-bold text-slate-900">GIS 자연재해 공간 분포 지도 제작 및 등록</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-indigo-50 border border-indigo-100 p-4 rounded-xl text-xs sm:text-sm text-indigo-900 space-y-1">
+                    <p class="font-bold">ⓘ활동 안내:</p>
+                    <p>학생이 직접 탐구 및 제작한 **GIS 기반 자연재해 공간 분포 지도**를 PNG 이미지 파일로 업로드하세요. 업로드된 이미지 및 작성 내용은 `.json` 파일 저장 시 함께 보존됩니다.</p>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">📌 GIS 자연재해 분포 지도 파일 첨부 (PNG 포맷 전용)</label>
+                    
+                    <div class="border-2 border-dashed border-slate-300 hover:border-indigo-500 rounded-2xl p-5 text-center bg-slate-50 transition relative" id="drop-zone">
+                        <!-- 업로드 전 안내 및 파일 선택 영역 -->
+                        <div id="upload-placeholder" class="space-y-2 py-4 relative cursor-pointer">
+                            <input type="file" id="map-image-input" accept="image/png" onchange="handleImageUpload(event)" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                            ☁️
+                            <p class="text-sm font-semibold text-slate-600">클릭하거나 PNG 파일(이미지)을 이곳으로 드래그하세요</p>
+                            <p class="text-xs text-slate-400">지원 형식: PNG (*.png)</p>
+                        </div>
+                        
+                        <!-- 업로드된 이미지 미리보기 -->
+                        <div id="image-preview-container" class="hidden space-y-3">
+                            <img id="map-preview-img" src="" alt="GIS 자연재해 지도" class="max-h-96 mx-auto rounded-xl border border-slate-200 shadow-sm object-contain bg-white">
+                            <div class="flex items-center justify-center space-x-3">
+                                <span class="text-xs text-emerald-600 font-bold">✓지도 첨부 완료</span>
+                                <button type="button" onclick="removeImage(event)" class="no-print text-xs bg-rose-100 hover:bg-rose-200 text-rose-700 px-3 py-1 rounded-lg font-semibold transition cursor-pointer relative z-10">
+                                    이미지 삭제
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2차시 슬라이드 -->
+        <section id="slide-2" class="slide-content bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-5 hidden">
+            <div class="flex items-center space-x-3 border-b pb-3 border-slate-100">
+                <span class="bg-indigo-600 text-white font-bold px-3 py-1 rounded-lg text-sm">2차시</span>
+                <h2 class="text-lg font-bold text-slate-900">자연재해의 발생적 특징 및 지역별 피해 사례 탐구</h2>
+            </div>
+
+            <!-- 2-1 자연재해 선택 드롭다운 -->
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-2">2-1. 탐구할 자연재해 유형 선택</label>
+                <select id="s2-disaster-type" class="save-field w-full sm:w-64 p-3 bg-slate-50 border border-slate-300 rounded-xl font-semibold text-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none text-sm">
+                    <option value="">-- 자연재해 선택 --</option>
+                    <option value="호우">호우 (폭우)</option>
+                    <option value="대설">대설 (폭설)</option>
+                    <option value="태풍">태풍</option>
+                    <option value="한파">한파</option>
+                    <option value="폭염">폭염</option>
+                </select>
+            </div>
+
+            <!-- 2-2 발생적 특징 (100자 이상) -->
+            <div>
+                <div class="flex justify-between items-center mb-1">
+                    <label class="block text-sm font-bold text-slate-700">2-2. 선정한 자연재해의 발생적 특징 작성</label>
+                    <span id="counter-s2-feature" class="text-xs font-bold text-rose-500">0 / 100자 이상</span>
+                </div>
+                <textarea id="s2-disaster-feature" rows="4" oninput="updateCharCount('s2-disaster-feature', 'counter-s2-feature', 100)" placeholder="해당 자연재해가 발생하는 지리적 특징, 발생 시기, 주요 형성 원인 등을 서술하시오. (100자 이상)" class="save-field w-full p-3 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm"></textarea>
+            </div>
+
+            <!-- 2-3 지도 기반 주요 발생 지역 (제한 없음) -->
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-1">2-3. 1차시 첨부 지도를 바탕으로 해당 자연재해가 주로 발생한 지역 작성</label>
+                <textarea id="s2-disaster-region" rows="3" placeholder="1차시 GIS 지도를 참고하여 피해나 발생이 집중된 구체적인 행정구역, 지형적 위치(예: 남해안, 동해안 산지, 대도시 불투수면 지역 등)를 기술하시오." class="save-field w-full p-3 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm"></textarea>
+            </div>
+
+            <!-- 2-4 피해 사례 2개 및 각 출처 -->
+            <div class="space-y-4 border-t pt-4 border-slate-100">
+                <label class="block text-sm font-bold text-slate-700">2-4. 자연재해 발생 지역의 피해 사례 조사 (사례 2가지)</label>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- 사례 1 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                        <span class="text-xs font-extrabold text-indigo-700 block">📌 피해 사례 1</span>
+                        <input type="text" id="s2-case1-title" placeholder="시기 및 발생 장소 (예: 2023년 7월 충북 청주시)" class="save-field w-full p-2 bg-white border border-slate-300 rounded-lg text-xs font-bold focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <label class="block text-xs font-bold text-slate-600">구체적인 피해 내용</label>
+                                <span id="counter-s2-case1" class="text-xs font-bold text-rose-500">0 / 50자 이상</span>
+                            </div>
+                            <textarea id="s2-case1-content" rows="4" oninput="updateCharCount('s2-case1-content', 'counter-s2-case1', 50)" placeholder="구체적인 피해 내용 (인명, 재산, 도로 마비, 침수, 농경지 유실 등, 50자 이상)" class="save-field w-full p-2.5 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none text-xs"></textarea>
+                        </div>
+                        <input type="text" id="s2-case1-source" placeholder="🔗 사례 1 참고 출처 (예: OO일보 기사, 행정안전부 자료)" class="save-field w-full p-2 bg-white border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-indigo-500 outline-none">
+                    </div>
+
+                    <!-- 사례 2 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                        <span class="text-xs font-extrabold text-indigo-700 block">📌 피해 사례 2</span>
+                        <input type="text" id="s2-case2-title" placeholder="시기 및 발생 장소 (예: 2022년 9월 경북 포항시)" class="save-field w-full p-2 bg-white border border-slate-300 rounded-lg text-xs font-bold focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <label class="block text-xs font-bold text-slate-600">구체적인 피해 내용</label>
+                                <span id="counter-s2-case2" class="text-xs font-bold text-rose-500">0 / 50자 이상</span>
+                            </div>
+                            <textarea id="s2-case2-content" rows="4" oninput="updateCharCount('s2-case2-content', 'counter-s2-case2', 50)" placeholder="구체적인 피해 내용 (인명, 재산, 도로 마비, 침수, 농경지 유실 등, 50자 이상)" class="save-field w-full p-2.5 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none text-xs"></textarea>
+                        </div>
+                        <input type="text" id="s2-case2-source" placeholder="🔗 사례 2 참고 출처 (예: 기상청 기후정보포털)" class="save-field w-full p-2 bg-white border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-indigo-500 outline-none">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-5 지리적 특징 종합 (50자 이상) -->
+            <div class="border-t pt-4 border-slate-100">
+                <div class="flex justify-between items-center mb-1">
+                    <label class="block text-sm font-bold text-slate-700">2-5. 종합: 자연재해가 주로 발생한 지역의 지리적 특징 분석</label>
+                    <span id="counter-s2-geo" class="text-xs font-bold text-rose-500">0 / 50자 이상</span>
+                </div>
+                <textarea id="s2-geo-feature" rows="3" oninput="updateCharCount('s2-geo-feature', 'counter-s2-geo', 50)" placeholder="지형, 기후, 해발고도, 토지 이용, 불투수율, 도시화 정도 등 해당 지역에 자연재해가 집중되는 지리적 요인을 종합 분석하시오. (50자 이상)" class="save-field w-full p-3 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm"></textarea>
+            </div>
+        </section>
+
+        <!-- 3차시 슬라이드 -->
+        <section id="slide-3" class="slide-content bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-5 hidden">
+            <div class="flex items-center space-x-3 border-b pb-3 border-slate-100">
+                <span class="bg-indigo-600 text-white font-bold px-3 py-1 rounded-lg text-sm">3차시</span>
+                <h2 class="text-lg font-bold text-slate-900">학생 진로 연계 자연재해 대비 대안 설계 및 기대효과</h2>
+            </div>
+
+            <!-- 3-1 희망 진로 -->
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-1">3-1. 학생 희망 진로 분야</label>
+                <input type="text" id="s3-career" placeholder="예: 도시계획가, GIS 데이터 전문가, 토목공학자, 환경행정가, AI 빅데이터 개발자 등" class="save-field w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-semibold focus:ring-2 focus:ring-indigo-500 outline-none text-sm">
+            </div>
+
+            <!-- 3-2 진로 연계 대안 작성 (150자 이상) -->
+            <div>
+                <div class="flex justify-between items-center mb-1">
+                    <label class="block text-sm font-bold text-slate-700">3-2. 진로와 연계한 자연재해 주요 발생 지역 맞춤형 대안 작성</label>
+                    <span id="counter-s3-plan" class="text-xs font-bold text-rose-500">0 / 150자 이상</span>
+                </div>
+                <textarea id="s3-plan-content" rows="5" oninput="updateCharCount('s3-plan-content', 'counter-s3-plan', 150)" placeholder="희망 진로의 전문적 시각(예: 도시계획적 접근, GIS/IT 기술 활용, 토목 구조물 보강, 제도 개선 등)을 반영하여 발생 지역의 자연재해를 대비하고 피해를 저감할 대안을 구체적으로 설계하시오. (150자 이상)" class="save-field w-full p-3 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm"></textarea>
+            </div>
+
+            <!-- 3-3 기대효과 (100자 이상) -->
+            <div>
+                <div class="flex justify-between items-center mb-1">
+                    <label class="block text-sm font-bold text-slate-700">3-3. 제안한 대안을 통한 기대효과</label>
+                    <span id="counter-s3-effect" class="text-xs font-bold text-rose-500">0 / 100자 이상</span>
+                </div>
+                <textarea id="s3-expected-effect" rows="4" oninput="updateCharCount('s3-expected-effect', 'counter-s3-effect', 100)" placeholder="제시한 대안이 실행되었을 때 지역 사회의 공간적 안전성 향상, 인명·재산 피해 감소, 도시 지속가능성 확보 등의 기대 효과를 제시하시오. (100자 이상)" class="save-field w-full p-3 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm"></textarea>
+            </div>
+
+            <!-- 3-4 참고 출처 -->
+            <div class="border-t pt-4 border-slate-100">
+                <label class="block text-xs font-bold text-slate-500 mb-1">🔗 3차시 탐구 및 대안 설계 참고 출처</label>
+                <input type="text" id="s3-sources" placeholder="예: 국토연구원 논문, 도시재해 저감 가이드라인, 해외 방재 우수 사례 보고서" class="save-field w-full p-2.5 bg-slate-50 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-indigo-500 outline-none">
+            </div>
+        </section>
+
+        <!-- 이전/다음 슬라이드 이동 버튼 -->
+        <div class="no-print flex items-center justify-between pt-2 mb-6">
+            <button onclick="navigateSlide(-1)" id="prev-btn" class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold px-4 py-2.5 rounded-xl transition text-sm flex items-center space-x-1">
+                ‹
+                <span>이전 차시</span>
+            </button>
+            <span id="slide-indicator" class="text-xs font-extrabold text-slate-500">1 / 3 차시</span>
+            <button onclick="navigateSlide(1)" id="next-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-4 py-2.5 rounded-xl transition text-sm flex items-center space-x-1">
+                <span>다음 차시</span>
+                ›
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        // 현재 활성화된 슬라이드 번호 (0: 전체보기, 1: 1차시, 2: 2차시, 3: 3차시)
+        let currentSlide = 1;
+
+        // 첨부 지도 이미지를 base64로 보관하는 변수
+        let mapImageBase64 = "";
+
+        // 페이지 로드 초기화
+        window.onload = function() {
+            switchTab(1);
+            // 글자 수 초기화 계산
+            updateCharCount('s2-disaster-feature', 'counter-s2-feature', 100);
+            updateCharCount('s2-case1-content', 'counter-s2-case1', 50);
+            updateCharCount('s2-case2-content', 'counter-s2-case2', 50);
+            updateCharCount('s2-geo-feature', 'counter-s2-geo', 50);
+            updateCharCount('s3-plan-content', 'counter-s3-plan', 150);
+            updateCharCount('s3-expected-effect', 'counter-s3-effect', 100);
+        };
+
+        // 슬라이드 전환 및 탭 관리
+        function switchTab(slideNum) {
+            currentSlide = slideNum;
+            const slides = [1, 2, 3];
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const indicator = document.getElementById('slide-indicator');
+
+            // 탭 스타일 초기화
+            [0, 1, 2, 3].forEach(n => {
+                const tab = document.getElementById(`tab-${n}`);
+                if (tab) {
+                    if (n === slideNum) {
+                        tab.className = n === 0 
+                            ? "tab-btn px-3 py-2 rounded-xl text-xs font-bold transition bg-amber-600 text-white shadow-sm"
+                            : "tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-indigo-600 text-white shadow-sm";
+                    } else {
+                        tab.className = n === 0
+                            ? "tab-btn px-3 py-2 rounded-xl text-xs font-bold transition bg-amber-50 text-amber-700 hover:bg-amber-100 border border-amber-200"
+                            : "tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 text-slate-600 hover:bg-slate-200";
+                    }
+                }
+            });
+
+            // 전체 보기 모드 (0번)
+            if (slideNum === 0) {
+                slides.forEach(n => {
+                    const slideEl = document.getElementById(`slide-${n}`);
+                    if (slideEl) slideEl.classList.remove('hidden');
+                });
+                if (prevBtn) prevBtn.classList.add('hidden');
+                if (nextBtn) nextBtn.classList.add('hidden');
+                if (indicator) indicator.textContent = "전체 보기 모드";
+                return;
+            }
+
+            // 개별 차시 슬라이드 모드
+            if (prevBtn) prevBtn.classList.remove('hidden');
+            if (nextBtn) nextBtn.classList.remove('hidden');
+
+            slides.forEach(n => {
+                const slideEl = document.getElementById(`slide-${n}`);
+                if (slideEl) {
+                    if (n === slideNum) {
+                        slideEl.classList.remove('hidden');
+                    } else {
+                        slideEl.classList.add('hidden');
+                    }
+                }
+            });
+
+            // 내비게이션 버튼 상태 조절
+            if (prevBtn) prevBtn.disabled = (slideNum === 1);
+            if (nextBtn) nextBtn.disabled = (slideNum === 3);
+
+            if (slideNum === 1) prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            else prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+
+            if (slideNum === 3) nextBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            else nextBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+
+            if (indicator) indicator.textContent = `${slideNum} / 3 차시`;
+        }
+
+        // 이전 / 다음 버튼으로 슬라이드 이동
+        function navigateSlide(direction) {
+            let target = currentSlide + direction;
+            if (target >= 1 && target <= 3) {
+                switchTab(target);
+            }
+        }
+
+        // 이미지 업로드 (PNG 포맷 처리 및 base64 인코딩)
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            if (file.type !== 'image/png') {
+                alert('PNG 포맷의 이미지 파일만 업로드할 수 있습니다.');
+                event.target.value = '';
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                mapImageBase64 = e.target.result;
+                displayImagePreview(mapImageBase64);
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // 이미지 미리보기 화면 표시
+        function displayImagePreview(src) {
+            const container = document.getElementById('image-preview-container');
+            const placeholder = document.getElementById('upload-placeholder');
+            const previewImg = document.getElementById('map-preview-img');
+
+            if (src) {
+                previewImg.src = src;
+                container.classList.remove('hidden');
+                placeholder.classList.add('hidden');
+            } else {
+                previewImg.src = '';
+                container.classList.add('hidden');
+                placeholder.classList.remove('hidden');
+            }
+        }
+
+        // 이미지 제거
+        function removeImage(event) {
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            mapImageBase64 = '';
+            document.getElementById('map-image-input').value = '';
+            displayImagePreview('');
+        }
+
+        // 글자 수 실시간 감지 및 상태 레이블 업데이트
+        function updateCharCount(textareaId, counterId, minChar) {
+            const textarea = document.getElementById(textareaId);
+            const counter = document.getElementById(counterId);
+            if (!textarea || !counter) return;
+
+            const length = textarea.value.length;
+            if (length >= minChar) {
+                counter.textContent = `${length} / ${minChar}자 이상 (충족됨)`;
+                counter.className = "text-xs font-bold text-emerald-600";
+            } else {
+                counter.textContent = `${length} / ${minChar}자 이상`;
+                counter.className = "text-xs font-bold text-rose-500";
+            }
+        }
+
+        // 전체 필드 데이터 Export (.json 다운로드)
+        function exportData() {
+            const data = {
+                appVersion: "2026.10.classroom",
+                timestamp: new Date().toISOString(),
+                mapImagePNG: mapImageBase64,
+                fields: {}
+            };
+
+            const fields = document.querySelectorAll('.save-field');
+            fields.forEach(field => {
+                data.fields[field.id] = field.value;
+            });
+
+            const jsonStr = JSON.stringify(data, null, 2);
+            const blob = new Blob([jsonStr], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+
+            const studentName = document.getElementById('info-name').value || '학생';
+            const studentNum = document.getElementById('info-number')?.value || '';
+            const fileName = `한국지리_수행평가_${studentNum}_${studentName.replace(/\s+/g, '_')}.json`;
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Ctrl/Cmd + S로 작성 내용 저장
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+                e.preventDefault();
+                exportData();
+            }
+        });
+
+        // `.json` 파일 불러오기 및 폼 복원
+        function importData(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+
+                    // 텍스트 필드 복원
+                    if (data.fields) {
+                        Object.keys(data.fields).forEach(id => {
+                            const elem = document.getElementById(id);
+                            if (elem) {
+                                elem.value = data.fields[id];
+                            }
+                        });
+                    }
+
+                    // 첨부 이미지 복원
+                    if (data.mapImagePNG) {
+                        mapImageBase64 = data.mapImagePNG;
+                        displayImagePreview(mapImageBase64);
+                    } else {
+                        mapImageBase64 = '';
+                        displayImagePreview('');
+                    }
+
+                    // 글자 수 레이블 재계산
+                    updateCharCount('s2-disaster-feature', 'counter-s2-feature', 100);
+                    updateCharCount('s2-case1-content', 'counter-s2-case1', 50);
+                    updateCharCount('s2-case2-content', 'counter-s2-case2', 50);
+                    updateCharCount('s2-geo-feature', 'counter-s2-geo', 50);
+                    updateCharCount('s3-plan-content', 'counter-s3-plan', 150);
+                    updateCharCount('s3-expected-effect', 'counter-s3-effect', 100);
+
+                    alert('작성 내용 및 지도가 성공적으로 복원되었습니다.');
+                } catch (err) {
+                    alert('올바르지 않은 저장 파일 형식입니다.');
+                }
+            };
+            reader.readAsText(file);
+        }
+    </script>
+
+
+<footer class="no-print max-w-4xl mx-auto text-center text-xs text-slate-400 pb-6">
+  학교 수업용 웹앱 · 작성 내용은 학생 기기에서 JSON 파일로 저장됩니다.
+</footer>
+
+</body>
+</html>
